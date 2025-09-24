@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #121212; /* fundo escuro */
+    color: #e0e0e0; /* letras claras */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ffcc; /* borda neon */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+    color: #00ffcc; /* destaque tecnológico */
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Seções de conteúdo */
+.conteudo, .conteudo2 {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+/* Títulos */
+.conteudo h2, .conteudo2 h2 {
+    font-size: 1.8rem;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 5px;
+}
+
+.conteudo h3 {
+    font-size: 1.4rem;
+    color: #80ffe0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.conteudo h4 {
+    font-size: 1.2rem;
+    color: #a0fff0;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+.conteudo p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li span {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+/* Destaque de span na seção dicas */
+.conteudo2 span {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 2px solid #00ffcc;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    box-shadow: 0 -2px 15px rgba(0, 255, 204, 0.2);
+}
+
+/* Links e interatividade */
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #80ffe0;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .cabecalho h1, .conteudo h2, .conteudo2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .conteudo h3, .conteudo h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Navbar mais fina */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #00ffcc;
+    box-shadow: 0 2px 10px rgba(0, 255, 204, 0.2);
+    z-index: 1000;
+    padding: 5px 0; /* reduzido de 10px para 5px */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+}
+
+.navbar li {
+    font-size: 0.95rem; /* um pouco menor para combinar com a barra mais fina */
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffcc;
+}
+
+/* Ajuste no padding-top do body para não sobrepor o header */
+body {
+    padding-top: 40px; /* ajustado da altura da navbar fina */
+}
+
